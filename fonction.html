@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Votre Titre de Page</title>
+        <link rel="stylesheet" href="../css/style.css"> <!-- Lien vers le fichier CSS global -->
+        <link rel="stylesheet" href="../css/form_style.css"> <!-- Lien vers le fichier CSS spécifique si vous avez créé un nouveau -->
+  
+    
+</head>
+<body>
+    <header>
+        <img src="../imagewaka/logo_ecole.png" alt="Logo de l'école CS-Waka">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="mathematique.html">Mathématiques</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Fonction</h1>
+        <p>Explorez nos ressources sur les fonctions mathématiques, incluant des guides d'étude, des exemples et des exercices.</p>
+        
+        <!-- Intégration du formulaire d'importation de fichier ici -->
+        <section>
+            <h2>Importer un document</h2>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Choisissez un fichier à importer :
+                <input type="file" name="uploadedFile" id="uploadedFile">
+                <input type="submit" value="Importer le fichier">
+            </form>
+        </section>
+    </main>
+    <footer>
+        Contactez-nous à : email@ecole.com | Adresse de l'école
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

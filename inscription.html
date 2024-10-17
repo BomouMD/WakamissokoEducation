@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - École CS-Waka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imagewaka/logo_ecole.png" alt="Logo de l'école CS-Waka" style="height: 100px;">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Inscription</h1>
+        <form action="register.php" method="post">
+            <div class="form-group">
+                <label for="username">Nom d'utilisateur:</label>
+                <input type="text" id="username" name="username" required placeholder="Entrez votre email ou nom d'utilisateur">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="password-confirm">Confirmé Mot de passe:</label>
+                <input type="password" id="password-confirm" name="password-confirm" required>
+            </div>
+            <input type="submit" value="S'inscrire" class="submit-btn">
+        </form>
+    </main>
+    <footer>
+        Contactez-nous à : email@ecole.com | Adresse de l'école
+    </footer>
+</body>
+</html>
